@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyoba</title>
+    <style>
+        /* Gaya umum */
+        body {
+            font-family: Georgia, serif;
+            background-color: #d8d8d8;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        /* Judul */
+        h1 {
+            font-family: Georgia, serif;
+            color: #850650;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #16a085;
+            border-bottom: 2px solid #16a085;
+            padding-bottom: 5px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        /* Paragraf */
+        p {
+            color: #2e6a86;
+        }
+
+        /* Daftar */
+        ul {
+            padding: 10px;
+            border-radius: 5px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        li {
+            margin: 5px 0;
+            font-family: Georgia, serif;
+        }
+
+        /* Link */
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #1abc9c;
+        }
+        p {
+            animation: fadeInUp 2s ease-in-out;
+            font-family: Georgia, serif;
+        }
+
+        /* Gambar */
+        img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Form */
+        form {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 250px;
+            margin: auto;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        button {
+            background: #16a085;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #1abc9c;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Ahoyy!!</h1>
+    <p>Nyoba belajar ngoding wak</p>
+
+    <h2>Daftar Belajar</h2>
+    <ul>
+        <li>HTML dasar</li>
+        <li>CSS dasar</li>
+        <li>JavaScript dasar</li>
+    </ul>
+
+    <h2>Link</h2>
+    <p>Kunjungi <a href="https://www.youtube.com" target="_blank">Yutub</a></p>
+    <p>Kunjungi halaman 2: <a href="Halaman 2.html">Halaman 2</a></p>
+    <h2>Gambar</h2>
+    <img src="https://i.pinimg.com/736x/5f/63/10/5f63107017a4c3492b47043b2caddb68.jpg" alt="Contoh gambar">
+
+    <h2>Formulir Sederhana</h2>
+    <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
+
