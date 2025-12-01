@@ -322,44 +322,6 @@ span{
     color: #ddd; 
 }
 
-/* GENERAL PAGE STYLE */
-.skills-page, .education-page, .experience-page, .contact-page {
-    padding-top: 10rem;
-    text-align: center;
-}
-
-.skill-container, .edu-container, .exp-container, .contact-container {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-}
-
-.skill-card, .edu-card, .exp-card {
-    background: #111;
-    border: 2px solid #b74b4b;
-    width: 300px;
-    padding: 2rem;
-    border-radius: 1.5rem;
-    transition: .3s;
-}
-
-.skill-card:hover, .edu-card:hover, .exp-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px #b74b4b;
-}
-
-.contact-container span {
-    color: #b74b4b;
-    font-weight: 600;
-}
-
-.contact-container a {
-    color: #b74b4b;
-    font-weight: 600;
-}
-
 /* ===== UNIVERSAL PAGE LAYOUT ===== */
 
 .skills-page, 
