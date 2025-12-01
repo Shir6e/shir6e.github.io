@@ -202,7 +202,7 @@ span{
 }
 
 .typing-text span::before{
-    content: "software Developer";
+    content: "Pelajar";
     color: #b74b4b;
     animation: words 20s infinite;
 }
