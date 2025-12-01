@@ -54,7 +54,7 @@ function typeEffect() {
             return;
         }
     } else {
-        typingElement.textContent = currentWord.substring(0, charIndex - 1);
+        typingElement.textContent = currentWord.substring(0, Math.max(0, charIndex - 1));
         charIndex--;
 
         if (charIndex === 0) {
