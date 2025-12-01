@@ -410,7 +410,86 @@ span{
     color: #b74b4b;
 }
 
+/* ===== ANIMASI FADE-IN (SCROLL REVEAL) ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* FIX CONTENT OVERLAP WITH HEADER */
 .services, .skills-page, .education-page, .experience-page, .contact-page {
     padding-top: 13rem; 
+}
+
+/* ===== MOBILE VERSION RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    /* Section title lebih kecil */
+    .section-title {
+        font-size: 3.4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Container spacing */
+    .skill-container,
+    .edu-container,
+    .exp-container,
+    .service-container,
+    .contact-container {
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+
+    /* Card melebar agar lebih nyaman dilihat */
+    .skill-card,
+    .edu-card,
+    .exp-card,
+    .service-card {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    /* Teks sedikit lebih besar */
+    .skill-card p,
+    .edu-card p,
+    .exp-card p,
+    .service-card p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .skill-card,
+    .edu-card,
+    .exp-card,
+    .service-card {
+        width: 95%;
+        padding: 1.8rem;
+    }
+
+    .skill-card h3,
+    .edu-card h2,
+    .exp-card h2,
+    .service-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .skill-card p,
+    .edu-card p,
+    .exp-card p,
+    .service-card p {
+        font-size: 1.4rem;
+    }
 }
