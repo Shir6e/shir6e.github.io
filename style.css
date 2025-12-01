@@ -568,14 +568,14 @@ span{
 .typing-text {
     display: inline-flex;
     align-items: center;
-    width: 260px;        /* sesuaikan jika teks masih kepanjangan */
+    width: 280px;        /* sesuaikan jika teks masih kepanjangan */
     height: 40px;
     overflow: hidden;
 }
 
 .typing-text span {
     display: inline-block;
-    width: 260px;        /* harus sama dengan .typing-text width */
+    width: 280px;        /* harus sama dengan .typing-text width */
     white-space: nowrap;
     overflow: hidden;
     text-align: left;
