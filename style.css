@@ -211,41 +211,6 @@ span{
     animation: words 20s infinite;
 }
 
-.typing-text span::after{
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8;
-    animation: cursor 0.6s infinite;
-}
-
-@keyframes cursor{
-    to{
-        border-left: 3px solid #b74b4b;
-    }
-}
-
-@keyframes words{
-    0%, 20%{
-        content: "Pelajar";
-    }
-    21%, 40%{
-        content: "Gamer";
-    }
-    41%, 60%{
-        content: "Perlaukan";
-    }
-    61%, 80%{
-        content: "Tolak Angin";
-    }
-    81%, 100%{
-        content: "Orang Biasa :)";
-    }
-}
-
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
@@ -590,4 +555,27 @@ span{
     width: 220px;
     overflow: hidden;
     white-space: nowrap;
+}
+
+/* === PREMIUM TYPEWRITER EFFECT === */
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#typing {
+    border-right: 3px solid #b74b4b;
+    padding-right: 4px;
+    animation: cursorBlink 0.6s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* cursor kedip */
+@keyframes cursorBlink {
+    0%, 50% { border-color: #b74b4b; }
+    51%, 100% { border-color: transparent; }
 }
