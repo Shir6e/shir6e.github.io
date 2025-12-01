@@ -360,6 +360,94 @@ span{
     font-weight: 600;
 }
 
+/* ===== UNIVERSAL PAGE LAYOUT ===== */
+
+.skills-page, 
+.education-page, 
+.experience-page, 
+.contact-page,
+.services {
+    padding-top: 13rem; /* agar tidak tertutup header */
+    text-align: center;
+}
+
+/* ===== UNIVERSAL CARD CONTAINER ===== */
+.skill-container,
+.edu-container,
+.exp-container,
+.service-container,
+.contact-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+/* ===== UNIVERSAL CARD STYLE (SAMA DENGAN SERVICE) ===== */
+.skill-card,
+.edu-card,
+.exp-card,
+.service-card {
+    background-color: #111;
+    border: 2px solid #b74b4b;
+    width: 320px;
+    padding: 2rem;
+    border-radius: 1.8rem;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 0 0px transparent;
+    cursor: pointer;
+}
+
+/* HOVER — efek highlight glowing merah */
+.skill-card:hover,
+.edu-card:hover,
+.exp-card:hover,
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+/* ===== UNIVERSAL TEXT STYLE ===== */
+.skill-card h3,
+.edu-card h2,
+.exp-card h2,
+.service-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.skill-card p,
+.edu-card p,
+.exp-card p,
+.service-card p {
+    font-size: 1.4rem;
+    color: #ddd;
+}
+
+/* ===== CONTACT PAGE SPECIAL ===== */
+.contact-container p {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.contact-container a {
+    color: #b74b4b;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.section-title span {
+    color: #b74b4b;
+}
+
 /* FIX CONTENT OVERLAP WITH HEADER */
 .services, .skills-page, .education-page, .experience-page, .contact-page {
     padding-top: 13rem; 
