@@ -8,3 +8,10 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".fade-in");
 hiddenElements.forEach(el => observer.observe(el));
+
+const menuIcon = document.getElementById("menu-icon");
+const nav = document.querySelector("nav");
+
+menuIcon.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});

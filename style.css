@@ -493,3 +493,41 @@ span{
         font-size: 1.4rem;
     }
 }
+
+/* HAMBURGER MENU */
+.menu-icon {
+    display: none;
+    font-size: 3rem;
+    color: #b74b4b;
+    cursor: pointer;
+}
+
+/* Tampil hanya di HP */
+@media(max-width: 995px){
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 60%;
+        background: #111;
+        border-left: 2px solid #b74b4b;
+        border-bottom: 2px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 2rem;
+        display: none; /* default tetap hilang */
+    }
+
+    nav a {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    nav.active {
+        display: block; /* muncul setelah di-toggle */
+    }
+}
