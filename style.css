@@ -194,7 +194,11 @@ span{
 .typing-text{
     font-size: 34px;
     font-weight: 600;
-    min-width: 280px;
+    font-size: 34px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .typing-text span{
@@ -579,4 +583,11 @@ span{
     white-space: nowrap;
     overflow: hidden;
     text-align: left;
+}
+
+.typing-text span {
+    display: inline-block;
+    width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
 }
