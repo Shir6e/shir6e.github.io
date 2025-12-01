@@ -267,3 +267,57 @@ span{
         margin-top: 4rem;
     }
 }
+
+/* SERVICE PAGE */
+.services {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.section-title span {
+    color: #b74b4b;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #111;
+    border: 2px solid #b74b4b;
+    width: 320px;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #b74b4b;
+}
+
+.service-card i {
+    font-size: 5rem;
+    color: #b74b4b;
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-size: 1.4rem;
+    color: #ddd;
+}
