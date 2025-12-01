@@ -202,7 +202,7 @@ span{
 }
 
 .typing-text span::before{
-    content: "Pelajar";
+    content: "";
     color: #b74b4b;
     animation: words 20s infinite;
 }
@@ -232,13 +232,13 @@ span{
         content: "Gamer";
     }
     41%, 60%{
-        content: "...";
+        content: "Perlaukan";
     }
     61%, 80%{
-        content: "...";
+        content: "Tolak Angin";
     }
     81%, 100%{
-        content: "...";
+        content: "Orang Biasa :)";
     }
 }
 
