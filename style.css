@@ -494,40 +494,63 @@ span{
     }
 }
 
-/* HAMBURGER MENU */
+/* ===== HAMBURGER MENU ===== */
 .menu-icon {
     display: none;
     font-size: 3rem;
     color: #b74b4b;
     cursor: pointer;
+    z-index: 1000;
 }
 
-/* Tampil hanya di HP */
-@media(max-width: 995px){
+@media(max-width: 995px) {
+
+    /* Munculkan icon */
     .menu-icon {
         display: block;
     }
 
+    /* Posisi navbar mobile */
     nav {
         position: absolute;
-        top: 70px;
+        top: 80px;
         right: 0;
-        width: 60%;
+        width: 70%;
         background: #111;
+        padding: 2rem;
+        display: none;
+        flex-direction: column;
         border-left: 2px solid #b74b4b;
         border-bottom: 2px solid #b74b4b;
-        border-bottom-left-radius: 2rem;
-        padding: 2rem;
-        display: none; /* default tetap hilang */
+        border-bottom-left-radius: 1.5rem;
+
+        /* Animation */
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.3s ease;
     }
 
     nav a {
         display: block;
-        margin: 2rem 0;
         font-size: 2rem;
+        margin: 1.5rem 0;
     }
 
+    /* Saat navbar dibuka */
     nav.active {
-        display: block; /* muncul setelah di-toggle */
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
+
+/* ===== ICON ANIMATION (BURGER → X) ===== */
+.menu-icon.open i {
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+.menu-icon i {
+    transition: 0.3s ease;
+}
+

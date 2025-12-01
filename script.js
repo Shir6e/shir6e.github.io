@@ -10,8 +10,9 @@ const hiddenElements = document.querySelectorAll(".fade-in");
 hiddenElements.forEach(el => observer.observe(el));
 
 const menuIcon = document.getElementById("menu-icon");
-const nav = document.querySelector("nav");
+const navbar = document.getElementById("navbar");
 
 menuIcon.addEventListener("click", () => {
-    nav.classList.toggle("active");
+    navbar.classList.toggle("active");
+    menuIcon.classList.toggle("open"); // animasi burger -> X
 });
