@@ -465,7 +465,6 @@ span{
     justify-content: space-between;
     cursor: pointer;
     z-index: 2000;
-    display: none; /* default hidden, muncul di mobile */
 }
 
 .menu-icon span {
