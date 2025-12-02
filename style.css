@@ -221,8 +221,8 @@ span{
     }
 }
 
-/* SERVICE PAGE */
-.services {
+/* interest PAGE */
+.interests {
     padding-top: 10rem;
     text-align: center;
 }
@@ -237,14 +237,14 @@ span{
     color: #b74b4b;
 }
 
-.service-container {
+.interest-container {
     display: flex;
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
 }
 
-.service-card {
+.interest-card {
     background-color: #111;
     border: 2px solid #b74b4b;
     width: 320px;
@@ -254,23 +254,23 @@ span{
     transition: 0.3s ease;
 }
 
-.service-card:hover {
+.interest-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 20px #b74b4b;
 }
 
-.service-card i {
+.interest-card i {
     font-size: 5rem;
     color: #b74b4b;
     margin-bottom: 1.5rem;
 }
 
-.service-card h3 {
+.interest-card h3 {
     font-size: 2.4rem;
     margin-bottom: 1rem;
 }
 
-.service-card p {
+.interest-card p {
     font-size: 1.4rem;
     color: #ddd; 
 }
@@ -281,7 +281,7 @@ span{
 .education-page, 
 .experience-page, 
 .contact-page,
-.services {
+.interests {
     padding-top: 13rem; /* agar tidak tertutup header */
     text-align: center;
 }
@@ -290,7 +290,7 @@ span{
 .skill-container,
 .edu-container,
 .exp-container,
-.service-container,
+.interest-container,
 .contact-container {
     margin-top: 4rem;
     display: flex;
@@ -299,11 +299,11 @@ span{
     gap: 3rem;
 }
 
-/* ===== UNIVERSAL CARD STYLE (SAMA DENGAN SERVICE) ===== */
+/* ===== UNIVERSAL CARD STYLE (SAMA DENGAN interest) ===== */
 .skill-card,
 .edu-card,
 .exp-card,
-.service-card {
+.interest-card {
     background-color: #111;
     border: 2px solid #b74b4b;
     width: 320px;
@@ -319,7 +319,7 @@ span{
 .skill-card:hover,
 .edu-card:hover,
 .exp-card:hover,
-.service-card:hover {
+.interest-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 25px #b74b4b;
 }
@@ -328,7 +328,7 @@ span{
 .skill-card h3,
 .edu-card h2,
 .exp-card h2,
-.service-card h3 {
+.interest-card h3 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
     color: white;
@@ -337,7 +337,7 @@ span{
 .skill-card p,
 .edu-card p,
 .exp-card p,
-.service-card p {
+.interest-card p {
     font-size: 1.4rem;
     color: #ddd;
 }
@@ -376,7 +376,7 @@ span{
 }
 
 /* FIX CONTENT OVERLAP WITH HEADER */
-.services, .skills-page, .education-page, .experience-page, .contact-page {
+.interests, .skills-page, .education-page, .experience-page, .contact-page {
     padding-top: 13rem; 
 }
 
@@ -394,14 +394,14 @@ span{
     .skill-container,
     .edu-container,
     .exp-container,
-    .service-container,
+    .interest-container,
     .contact-container {
         gap: 2rem;
         padding: 0 2rem;
     }
 
     /* Card melebar agar lebih nyaman dilihat */
-    .service-card,
+    .interest-card,
     .skill-card,
     .edu-card,
     .exp-card {
@@ -416,7 +416,7 @@ span{
     .skill-card p,
     .edu-card p,
     .exp-card p,
-    .service-card p {
+    .interest-card p {
         font-size: 1.5rem;
     }
 }
@@ -427,7 +427,7 @@ span{
         font-size: 3.4rem;
     }
 
-    .service-card,
+    .interest-card,
     .skill-card,
     .edu-card,
     .exp-card {
@@ -438,14 +438,14 @@ span{
     .skill-card h3,
     .edu-card h2,
     .exp-card h2,
-    .service-card h3 {
+    .interest-card h3 {
         font-size: 1.8rem;
     }
 
     .skill-card p,
     .edu-card p,
     .exp-card p,
-    .service-card p {
+    .interest-card p {
         font-size: 1.4rem;
         line-height: 1.4;
     }
