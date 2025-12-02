@@ -282,7 +282,7 @@ span{
 .education-page, 
 .experience-page, 
 .contact-page,
-.interests {
+.interest-page {
     padding-top: 13rem; /* agar tidak tertutup header */
     text-align: center;
 }
