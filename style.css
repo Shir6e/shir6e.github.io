@@ -507,15 +507,17 @@ span{
         background: rgba(0, 0, 0, 0.45);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
+
         will-change: transform, backdrop-filter;
         padding-top: 12rem;
         padding-left: 2rem;
         display: flex;
         flex-direction: column;
         gap: 2.4rem;
+
+        border-left: 2px solid #b74b4b;
         transition: 0.35s ease-in-out;
         z-index: 1500;
-        border-left: 2px solid #b74b4b;
     }
     /* Saat aktif (dibuka) */
     nav.active {
