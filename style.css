@@ -458,67 +458,65 @@ span{
 
 /* hamburger button */
 .menu-icon {
-    display: none;
-    font-size: 3.2rem;
-    color: #b74b4b;
+    width: 35px;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
     z-index: 2000;
-    transition: 0.3s ease;
+    display: none; /* default hidden, muncul di mobile */
 }
 
-/* memastikan ikon bisa diputar */
-.menu-icon i {
-    transition: 0.3s ease;
-    transform-origin: center;
+.menu-icon span {
+    width: 100%;
+    height: 4px;
+    background: #b74b4b;
+    border-radius: 2px;
+    transition: 0.4s ease;
 }
 
-/* hamburger → X animation */
-.menu-icon.open i {
-    transform: rotate(90deg) scale(1.2);
-    color: white;
+/* Animasi saat open */
+.menu-icon.open span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.menu-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
 }
 
 /* MOBILE VERSION */
-@media(max-width: 995px){
+@media (max-width: 995px) {
 
     .menu-icon {
-        display: block;
+        display: flex;
     }
 
+    /* NAVBAR SLIDE + BLUR */
     nav {
         position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
         width: 70%;
-        background: rgba(20, 20, 20, 0.80);
-        backdrop-filter: blur(12px);
-        padding-top: 10rem;
+        backdrop-filter: blur(18px);              /* ✨ BURAM */
+        -webkit-backdrop-filter: blur(18px);      /* Untuk Safari */
+        background: rgba(10, 10, 10, 0.65);       /* sedikit gelap */
+        padding-top: 12rem;
         padding-left: 2rem;
-
         display: flex;
         flex-direction: column;
         gap: 2.4rem;
         transition: 0.4s ease;
         border-left: 2px solid #b74b4b;
-        box-shadow: -5px 0 25px rgba(183,75,75,0.4);
+        box-shadow: -5px 0 25px rgba(183, 75, 75, 0.4);
         z-index: 1500;
     }
-
-    nav a {
-        color: white;
-        font-size: 2.2rem;
-        font-weight: 500;
-        padding: .5rem 0;
-        transition: 0.3s ease;
-    }
-
-    nav a:hover {
-        color: #b74b4b;
-        transform: translateX(8px);
-    }
-
-    /* NAVBAR AKTIF → slide in */
+    /* Saat aktif (dibuka) */
     nav.active {
         right: 0;
     }
