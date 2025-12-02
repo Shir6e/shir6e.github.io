@@ -466,9 +466,15 @@ span{
     transition: 0.3s ease;
 }
 
+/* memastikan ikon bisa diputar */
+.menu-icon i {
+    transition: 0.3s ease;
+    transform-origin: center;
+}
+
 /* hamburger → X animation */
 .menu-icon.open i {
-    transform: rotate(90deg);
+    transform: rotate(90deg) scale(1.2);
     color: white;
 }
 
