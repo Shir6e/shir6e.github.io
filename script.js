@@ -33,7 +33,7 @@ const words = [
     "Gamer",
     "Perlaukan",
     "Tolak Angin",
-    "Orang Biasa :)"
+    "Orang Biasa"
 ];
 
 let index = 0;
