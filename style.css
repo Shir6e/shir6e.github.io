@@ -23,18 +23,19 @@ body{
 }
 
 header{
-    margin-top: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
+    background: rgba(0, 0, 0, 0.4); /* semi transparan */
+    backdrop-filter: blur(12px);    /* efek blur modern */
+    -webkit-backdrop-filter: blur(12px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo{
