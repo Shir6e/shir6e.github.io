@@ -276,6 +276,12 @@ span{
     color: #ddd; 
 }
 
+.biodata-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
 /* ===== UNIVERSAL PAGE LAYOUT ===== */
 
 .skills-page,
@@ -290,7 +296,6 @@ span{
 
 /* ===== UNIVERSAL CARD CONTAINER ===== */
 .skill-container,
-.biodata-container,
 .edu-container,
 .exp-container,
 .interest-container,
