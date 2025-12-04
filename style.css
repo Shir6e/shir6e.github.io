@@ -276,12 +276,6 @@ span{
     color: #ddd; 
 }
 
-.biodata-container {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: center;
-}
-
 /* ===== UNIVERSAL PAGE LAYOUT ===== */
 
 .skills-page,
