@@ -278,7 +278,8 @@ span{
 
 /* ===== UNIVERSAL PAGE LAYOUT ===== */
 
-.skills-page, 
+.skills-page,
+.biodata-page, 
 .education-page, 
 .experience-page, 
 .contact-page,
@@ -289,6 +290,7 @@ span{
 
 /* ===== UNIVERSAL CARD CONTAINER ===== */
 .skill-container,
+.biodata-container,
 .edu-container,
 .exp-container,
 .interest-container,
